@@ -19,7 +19,7 @@ namespace ZiborovPractice
 
         private void label1_MouseHover(object sender, EventArgs e)
         {
-            MessageBox.Show("Done it!");
+            MessageBox.Show("Done it!\nGreat!!!");
         }
     }
 }
