@@ -24,36 +24,28 @@ namespace ZiborovPractice
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            base.Text = "Извлечение квадр.корня";
-            button1.Text = "Извлечь корень";
-            textBox1.Clear();
-            label1.Text = null;
+            this.Text = "Enter your password";
+            textBox1.Text = String.Empty;
+            textBox1.TabIndex = 0;
+            textBox1.PasswordChar = '+';
+            textBox1.Font = new Font("Calibri", 12.0F);
+            label1.Text = String.Empty;
+            label1.Font = new Font("Courier New", 14.0F);
+            button1.Text = "Show your password";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Single X;
+            /*Single X;
             bool isItCypher = Single.TryParse(textBox1.Text,System.Globalization.NumberStyles.Number,System.Globalization.NumberFormatInfo.CurrentInfo,out X);
             if (isItCypher == false)
             {
-                label1.Text = "please enter a number";
-                label1.ForeColor = Color.Red;
                 return;
             }
-            var Y = (Single)Math.Sqrt(X);
-            label1.ForeColor = Color.Black;
-            label1.Text = String.Format("Корень из {0} равен {1:F5}",X,Y);
+            var Y = (Single)Math.Sqrt(X);*/
+            label1.Text = textBox1.Text;
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            label1.Text = string.Format("Выбранная дата - {0}",dateTimePicker1.Text);
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            dateTimePicker1.Focus();
-            SendKeys.Send("{F4}");
-        }
     }
 }
