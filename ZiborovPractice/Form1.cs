@@ -1,71 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZiborovPractice
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Улыбка";
+            var tabPage3 = new TabPage();
+            tabPage3.UseVisualStyleBackColor = true;
+            this.tabControl1.Controls.Add(tabPage3);
+            this.radioButton5.Location = new Point(20,15);
+            this.radioButton6.Location = new Point(20, 38);
+            tabControl1.TabPages[0].Text = "Text";
+            tabControl1.TabPages[1].Text = "Color";
+            tabControl1.TabPages[2].Text = "Size";
+            radioButton1.Text = "1";
+            radioButton2.Text = "2";
+            radioButton3.Text = "3";
+            radioButton4.Text = "4";
+            radioButton5.Text = "5";
+            radioButton6.Text = "6";
+            label1.Text = radioButton1.Text;
         }
 
-        /*private void label1_MouseHover(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Done it!\nGreat!!!!");
-        }*/
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.Text = "Флажок";
-            checkBox1.Text = "Полужирный";
-            checkBox1.Focus();
-            //textBox1.Text = String.Empty;
-            //textBox1.TabIndex = 0;
-            //textBox1.PasswordChar = '+';
-            //textBox1.Font = new Font("Calibri", 12.0F);
-            label1.Text = "Choose text style";
-            label1.Font = new Font("Courier New", 14.0F);
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            //button1.Text = "Show your password";
+            label1.Text = radioButton1.Text;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            /*Single X;
-            bool isItCypher = Single.TryParse(textBox1.Text,System.Globalization.NumberStyles.Number,System.Globalization.NumberFormatInfo.CurrentInfo,out X);
-            if (isItCypher == false)
-            {
-                return;
-            }
-            var Y = (Single)Math.Sqrt(X);*/
-            //label1.Text = textBox1.Text;
+            label1.Text = radioButton2.Text;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            /*if (checkBox1.Checked == true)
-            {
-                label1.Font = new Font("Calibri",14.0F,FontStyle.Bold);
-
-            }
-            else
-            {
-                label1.Font = new Font("Calibri", 14.0F,FontStyle.Underline);
-            }*/
-            label1.Font = new Font("Calibri", 14.0F, label1.Font.Style ^ FontStyle.Bold);
+            label1.Text = radioButton4.Text;
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            label1.Font = new Font("Calibri", 18.0F, label1.Font.Style ^ FontStyle.Italic);
+            label1.Text = radioButton3.Text;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton5.Text;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = radioButton6.Text;
         }
     }
 }
