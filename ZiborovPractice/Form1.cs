@@ -6,55 +6,28 @@ namespace ZiborovPractice
 {
     public partial class Form1 : Form
     {
-        string fName;
+        string[] Months;
+        int[] Sales;
+        Graphics Grafika;
+        Bitmap Rastr;
+        int OtLeft, OtRight, OtDown, OtUp;
+        int OYLen, OXLen, OXy, Xmax, XBegEpur;
+        Double HorStep;
+        int VertStep;
+        int i;
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs ae)
         {
-            try
-            {
-                var reader = new System.IO.StreamReader(fName);
-                textBox1.Text = reader.ReadToEnd();
-                reader.Close();
+            Months = new string[] { "Янв", "Фев", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" };
+            Sales = new int[] { 335, 414,572,629,750,931,753,599,422,301,245,155};
+            OtLeft = 35; OtRight = 15; OtDown = 20; OtUp = 10;
+            this.Text = "График";
+            button1.Text
+             
 
-            }
-            catch (System.IO.FileNotFoundException situate)
-            {
-                MessageBox.Show(situate.Message + "\n" + "Нет такого файла", "ОШибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                //throw;
-            }
-            catch (Exception situate)
-            {
-                MessageBox.Show(situate.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                var writer = new System.IO.StreamWriter(fName, false);
-                writer.Write(textBox1.Text);
-                //writer.Close();
-                System.IO.File.WriteAllText(@"C:\Temp\11.txt", textBox1.Text);
-            }
-            catch (Exception situate)
-            {
-                MessageBox.Show(situate.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            textBox1.Multiline = true; textBox1.Clear();
-            button1.Text = "Open"; button1.TabIndex = 0;
-            button2.Text = "Save";
-            this.Text = "Unicode here";
-            fName = @"C:\Temp\11.txt";
-        }
     }
 }
 
