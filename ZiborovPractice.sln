@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseDraw", "MouseDraw\Mous
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawBezier", "DrawBezier\DrawBezier.csproj", "{8BE1A131-E4DC-4FBC-8781-30DC92E9FD8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyBoardTxt", "CopyBoardTxt\CopyBoardTxt.csproj", "{49E13473-A486-4DEC-A54B-F4219677C3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapBoard", "BitmapBoard\BitmapBoard.csproj", "{0722D1F9-33C8-4A50-AA56-3FA2936E831E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8BE1A131-E4DC-4FBC-8781-30DC92E9FD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE1A131-E4DC-4FBC-8781-30DC92E9FD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BE1A131-E4DC-4FBC-8781-30DC92E9FD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E13473-A486-4DEC-A54B-F4219677C3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E13473-A486-4DEC-A54B-F4219677C3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E13473-A486-4DEC-A54B-F4219677C3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E13473-A486-4DEC-A54B-F4219677C3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0722D1F9-33C8-4A50-AA56-3FA2936E831E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0722D1F9-33C8-4A50-AA56-3FA2936E831E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0722D1F9-33C8-4A50-AA56-3FA2936E831E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0722D1F9-33C8-4A50-AA56-3FA2936E831E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
