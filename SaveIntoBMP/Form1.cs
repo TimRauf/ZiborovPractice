@@ -31,7 +31,7 @@ namespace SaveIntoBMP
             {
                 var obj = receiver.GetData(DataFormats.Bitmap);
                 Rastr = (Bitmap) obj;
-                Rastr.Save(@"E:\Clip.bmp");
+                Rastr.Save(@"C:\Temp\Clip.bmp");
                 MessageBox.Show(@"Изображение из буфера записано в D:\Clip.bmp", "Успех");
 
             }
