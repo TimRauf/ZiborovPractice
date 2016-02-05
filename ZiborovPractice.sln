@@ -13,9 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveIntoBMP", "SaveIntoBMP\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextZiborovExe", "NextZiborovExe\NextZiborovExe.csproj", "{D07B417D-2C80-40DA-A86D-A9128691CC3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableTxt", "..\ZiborovPractice__\TableTxt\TableTxt.csproj", "{CA110498-8159-442A-8EAF-79693B614A19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableTxt", "TableTxt\TableTxt.csproj", "{CA110498-8159-442A-8EAF-79693B614A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablTxtPrint", "..\ZiborovPractice__\TablTxtPrint\TablTxtPrint.csproj", "{C9231D6E-6AD7-4E6D-88B4-9FF916973DAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablTxtPrint", "TablTxtPrint\TablTxtPrint.csproj", "{C9231D6E-6AD7-4E6D-88B4-9FF916973DAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
