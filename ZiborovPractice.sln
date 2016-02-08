@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZiborovPractice", "ZiborovPractice\ZiborovPractice.csproj", "{0355ECDE-9ED7-4605-9924-E5E0FAF6E010}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablTxtPrint", "TablTxtPrint\TablTxtPrint.csproj", "{C9231D6E-6AD7-4E6D-88B4-9FF916973DAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablIntoHtml", "TablIntoHtml\TablIntoHtml.csproj", "{E657916B-B09C-44B5-A464-9D16A3851563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseDataGrid", "UseDataGrid\UseDataGrid.csproj", "{0653821F-CD80-4DF9-9E34-65197AEC87B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{E657916B-B09C-44B5-A464-9D16A3851563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E657916B-B09C-44B5-A464-9D16A3851563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E657916B-B09C-44B5-A464-9D16A3851563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0653821F-CD80-4DF9-9E34-65197AEC87B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0653821F-CD80-4DF9-9E34-65197AEC87B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0653821F-CD80-4DF9-9E34-65197AEC87B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0653821F-CD80-4DF9-9E34-65197AEC87B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
