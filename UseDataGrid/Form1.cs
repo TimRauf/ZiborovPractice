@@ -23,12 +23,12 @@ namespace UseDataGrid
             String[] Names =
             {
                 "Andrew - work", "Bob - pizza", "Alice",
-                "George", "JamesBond", "Ann", "Tomhardware", "Orta"
+                "George", "JamesBond", "Ann", "Tomhardware", "Orta", "Tim"
             };
             String[] Phones =
             {
                 "(555)123789", "4589775", "48738979324",
-                "(8552)3-10-45", "123", "456", "234424", "232333"
+                "(8552)3-10-45", "123", "456", "234424", "232333", "4568787898"
             };
             var Table = new DataTable();
             Table.Columns.Add("NAMES");
